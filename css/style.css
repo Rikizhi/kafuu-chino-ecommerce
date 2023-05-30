@@ -1,5 +1,5 @@
 :root {
-  --primary: #b6895b;
+  --primary: #7080d5;
   --bg: #010101;
 }
 
@@ -31,7 +31,7 @@ body {
   align-items: center;
   padding: 1.4rem 7%;
   background-color: rgba(1, 1, 1, 0.8);
-  border-bottom: 1px solid #513c28;
+  border-bottom: 1px solid #5460d0;
   position: fixed;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@ body {
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
-  color: #fff;
+  color: #dddaf9;
   font-style: italic;
 }
 
@@ -55,7 +55,6 @@ body {
   display: inline-block;
   font-size: 1.2rem;
   margin: 0 1rem;
-  
 }
 
 .navbar .navbar-nav a:hover {
@@ -86,6 +85,40 @@ body {
 
 #hamburger-menu {
   display: none;
+}
+
+/* Navbar search form */
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--bg);
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--bg);
 }
 
 /* Hero Section */
@@ -370,6 +403,11 @@ footer .credit a {
 
   .navbar .navbar-nav a:hover:after {
     transform: scaleX(0.2);
+  }
+
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
   }
 
   .about .row {
