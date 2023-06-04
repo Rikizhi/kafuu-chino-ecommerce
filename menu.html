@@ -34,7 +34,9 @@
 
       <div class="navbar-extra">
         <a href="#" id="search-button"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-cart"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
 
@@ -43,8 +45,36 @@
         <input type="search" id="search-box" placeholder="cari disini..." />
         <label for="search-box"><i data-feather="search"></i></label>
       </div>
-      <!-- Search Form start -->
-      
+      <!-- Search Form end -->
+
+      <!-- Shopping Cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30k</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30k</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1" />
+          <div class="item-detail">
+            <h3>Product 1</h3>
+            <div class="item-price">IDR 30k</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- Shopping Cart end -->
     </nav>
     <!-- Navbar End -->
 
@@ -105,19 +135,22 @@
     <!-- Product Section start -->
     <section class="products" id="products">
       <h2><span>Produk Unggulan</span> Kami</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque aspernatur ea aliquam voluptates nostrum.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae eaque
+        aspernatur ea aliquam voluptates nostrum.
+      </p>
 
       <div class="row">
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
           </div>
           <div class="product-image">
-            <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1">
+            <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1" />
           </div>
           <div class="product-content">
-            <h3>Peru Cajamarca Cofee</h3>
+            <h3>Peru Cajamarca Cofee Beans</h3>
             <div class="product-stars">
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
@@ -131,13 +164,13 @@
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
           </div>
           <div class="product-image">
-            <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1">
+            <img src="img/products/coffe-yirgacheffe.jpg" alt="Product 2" />
           </div>
           <div class="product-content">
-            <h3>Peru Cajamarca Cofee</h3>
+            <h3>Yirgacheffe Cofee Beans</h3>
             <div class="product-stars">
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
@@ -151,13 +184,13 @@
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
           </div>
           <div class="product-image">
-            <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1">
+            <img src="img/products/cofee-decaf.jpg" alt="Product 3" />
           </div>
           <div class="product-content">
-            <h3>Peru Cajamarca Cofee</h3>
+            <h3>Decaf Cofee Beans</h3>
             <div class="product-stars">
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
@@ -171,13 +204,33 @@
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
-            <a href="#"><i data-feather="eye"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
           </div>
           <div class="product-image">
-            <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1">
+            <img src="img/products/cofee-brazil.jpg" alt="Product 4" />
           </div>
           <div class="product-content">
-            <h3>Peru Cajamarca Cofee</h3>
+            <h3>Brazilian Cofee Beans</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 150k <span>IDR 230k</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"><i data-feather="eye"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/products/coffe-blend.jpg" alt="Product 5" />
+          </div>
+          <div class="product-content">
+            <h3>Blend Cofee Beans</h3>
             <div class="product-stars">
               <i data-feather="star" class="star-full"></i>
               <i data-feather="star" class="star-full"></i>
@@ -189,16 +242,15 @@
           </div>
         </div>
       </div>
-
     </section>
     <!-- Product Section end -->
-
-
 
     <!-- Footer start -->
     <footer>
       <div class="socials">
-        <a href="https://www.instagram.com/ariamzah.rkz/"><i data-feather="instagram"></i></a>
+        <a href="https://www.instagram.com/ariamzah.rkz/"
+          ><i data-feather="instagram"></i
+        ></a>
         <a href="#"><i data-feather="twitter"></i></a>
         <a href="#"><i data-feather="facebook"></i></a>
       </div>
@@ -220,6 +272,35 @@
       </div>
     </footer>
     <!-- Footer end -->
+
+    <!-- Modal Box Item Detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/products/cofee-peru cajamarca.jpg" alt="Product 1" />
+          <div class="product-content">
+            <h3>Product 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam,
+              eligendi dolor. Dolores aperiam consequatur doloremque debitis
+              veniam minima maxime. Explicabo, eaque. Repudiandae quisquam
+              corporis laudantium!
+              <div class="product-stars">
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star" class="star-full"></i>
+                <i data-feather="star"></i>
+                <i data-feather="star"></i>
+              </div>
+              <div class="product-price">IDR 150k <span>IDR 230k</span></div>
+              <a href="#"><i data-feather="shopping-cart"></i> <span>add to cart</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Box Item Detail end -->
 
     <!-- Feather Icons -->
     <script>
